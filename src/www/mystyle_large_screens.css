@@ -1,0 +1,60 @@
+/*Megles othones.*/
+@media screen and (min-width:1900px) {
+
+/*Mikres othones.*/
+
+body {
+    font-size: 60px;
+}
+
+.list_lang {
+    margin: 0.1em 0em;
+    padding: 0em 0em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list_lang li {
+    display: inline;
+    margin: 0em 0.1em;
+}
+
+.list_lang li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #036;
+    padding: 0em 1em;
+}
+
+.list_main {
+    margin: 0.1em 0em;
+    padding: 0em 0em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list_main li {
+    display: block;
+    border-bottom:4px solid;
+    border-left:  4px solid;
+    border-right: 4px solid;
+}
+
+.list_main li:first-child{
+    border-top:4px solid;
+}
+
+.list_main li:nth-child(odd) {
+    background-color: #54;
+}
+
+.list_main li:nth-child(even) {
+    background-color: #465;
+}
+
+.list_main li a {
+    text-decoration: none;
+}
+
+
+}

@@ -1,0 +1,18 @@
+-- Users.
+
+CREATE TABLE IF NOT EXISTS `bus` (
+  `id`   varchar(200) NOT NULL,
+  `pass` varchar(200) NOT NULL,
+  PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- Positions.
+
+CREATE TABLE IF NOT EXISTS `position` (
+  `id` varchar(200) NOT NULL,
+  `when` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `lon` DECIMAL(12,9) NOT NULL,
+  `lat` DECIMAL(12,9)  NOT NULL,
+  PRIMARY KEY(`id`, `when`),
+  FOREIGN KEY (`id`) REFERENCES `bus`(`id`) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;

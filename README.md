@@ -10,7 +10,9 @@ The software is based on:
 * apache web server
 * mysql
 * php
+* openshift
 
 # Wiki info
 
-TODO
+In order to install the software, please follow the guide in the wiki: https://github.com/ellak-monades-aristeias/mult_bus/wiki.
+The milestones of the project are recorded in https://github.com/ellak-monades-aristeias/mult_bus/wiki/Milestones.

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Uncomment the lines bellow in order to create a local wireless network automatically.
+
 #/bin/sleep 60
 BASE_DIR='/home/pi/Desktop/mult_bus/src/bash_scripts'
 

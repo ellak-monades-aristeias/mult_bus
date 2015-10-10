@@ -17,3 +17,5 @@ The software is based on:
 In order to install the software, please follow the guide in the wiki: https://github.com/ellak-monades-aristeias/mult_bus/wiki.
 
 The milestones of the project are recorded in https://github.com/ellak-monades-aristeias/mult_bus/wiki/Milestones.
+
+Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την [ΕΛ/ΛΑΚ](https://ellak.gr/)

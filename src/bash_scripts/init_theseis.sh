@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Replace these if needed.
-ip="10.0.0.254"
+ip="192.168.255.254"
 IMAGE_DIR=images
 IMAGE_HTML=images.html
 MYSQL_PASS="raspberry"
@@ -33,7 +33,7 @@ do
     echo "<div style=\"display: inline-block;\">" >> $IMAGE_HTML
     echo "<img src=\"$IMAGE_DIR/$i.png\" title=\"Home\"/>" >> $IMAGE_HTML
     echo "<br/>" >> $IMAGE_HTML
-    echo "<label>or Browser--> 192.168.2.1</label>" >> $IMAGE_HTML
+    echo "<label>or Browser--> 192.168.255.254</label>" >> $IMAGE_HTML
     echo "<br/>" >> $IMAGE_HTML
     echo "<label> Seat: $i </label>" >> $IMAGE_HTML
     echo "<br/>" >> $IMAGE_HTML

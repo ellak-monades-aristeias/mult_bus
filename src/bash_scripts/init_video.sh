@@ -5,13 +5,13 @@ BASE_DIR="/home/pi/media_files/video/"
 MYSQL_PASS="raspberry"
 
 #Delete the previous videos and votes from the database.
-/usr/bin/mysql -p${MYSQL_PASS} -h "localhost" -u "root" multsyst --skip-column-names -e "TRUNCATE TABLE psifoi_video"
-/usr/bin/mysql -p${MYSQL_PASS} -h "localhost" -u "root" multsyst --skip-column-names -e "TRUNCATE TABLE video"
+/usr/bin/mysql -h "localhost" -u "root" -p${MYSQL_PASS} multsyst --skip-column-names -e "TRUNCATE TABLE psifoi_video"
+/usr/bin/mysql -h "localhost" -u "root" -p${MYSQL_PASS} multsyst --skip-column-names -e "TRUNCATE TABLE video"
 
 #Read the new videos from the directory in the disk.
 cd "$BASE_DIR"
-#Get only the files that end with .avi and keep only the part before the .avi
-video=$(/bin/ls *.avi 2> /dev/null | /bin/sed "s/.avi$//g" )
+#Get only the files that end with .mkv and keep only the part before the .mkv
+video=$(/bin/ls *.mkv 2> /dev/null | /bin/sed "s/.mkv$//g" )
 ls_status=$?
 if [ $ls_status -eq 0 ]
 then
@@ -23,7 +23,7 @@ then
         query="INSERT INTO video (id, name) VALUES ($id, '$line');"
         #echo $query
         #Actually execute the querry.
-        /usr/bin/mysql -p${MYSQL_PASS} -h "localhost" -u "root" multsyst --skip-column-names -e "$query"
+        /usr/bin/mysql -h "localhost" -u "root" -p${MYSQL_PASS} multsyst --skip-column-names -e "$query"
          id=$[$id +1]
     done
 else

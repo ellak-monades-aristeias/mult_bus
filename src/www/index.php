@@ -44,7 +44,7 @@ else {
     echo "</li>";
     
     echo "<li>";
-    echo "<a href=\"http://bus-aggelos.rhcloud.com/map.php?id=1"> <div>" . getString($lang, "o3"). "</div> </a>";
+    echo "<a href=\"http://bus-aggelos.rhcloud.com/map.php?id=1\"> <div>" . getString($lang, "o3"). "</div> </a>";
     echo "</li>";
     
     echo "<li>";

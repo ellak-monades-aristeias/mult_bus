@@ -20,7 +20,7 @@ In order to install the software, please follow the guide in the wiki: https://g
 
 The milestones of the project are recorded in https://github.com/ellak-monades-aristeias/mult_bus/wiki/Milestones.
 
-# Παραδωτέα
+# Παραδοτέα
 
 | Παραδοτέο | URL |
 |-----------|-----|

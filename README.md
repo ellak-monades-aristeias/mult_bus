@@ -8,7 +8,7 @@ system setup, passengers will be able to vote and play multimedia. They will
 connect to the system with their smart phones through wi-fi. In addition to that, 
 the system will show the position of the bus on the Map, which will give 
 opportunity to the passengers, and the people that wait for the bus to learn
-where the bus exactly is. 
+where the bus exactly is on map. 
 
 [User Documentation](Readme_user.md)
 
